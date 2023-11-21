@@ -3,27 +3,27 @@ body {
   width: auto;
   height: auto;
   font-family: "Spartan";
-  padding-left: 320px;
-  padding-right: 320px;
-  padding-top: 50px;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 2%;
 }
 
-#NavBar {
+#nav-bar {
   display: flex;
   justify-content: center;
   align-items: center;
   width: auto;
   height: auto;
-  gap: 100px;
+  gap: 10%;
   flex-shrink: 0;
 }
 
-.NavBarItem {
+.nav-bar-item {
   width: 100px;
   border-bottom: 2px solid #ec4038;
   font-size: 16px;
   color: white;
-  padding-bottom: 6px;
+  padding-bottom: 4px;
   text-align: center;
 }
 
@@ -31,7 +31,7 @@ body {
   width: 60px;
   height: 60px;
   margin-right: auto;
-  border-radius: 60px;
+  border-radius: 100%;
   flex-shrink: 0;
   background: linear-gradient(180deg, #662523 0%, #ec4038 100%);
   box-shadow: 0px 4px 30px -8px rgba(235, 65, 55, 0.6);
@@ -47,21 +47,102 @@ body {
   padding-left: 25%;
 }
 
-#HeroSection {
-    display: inline-flex; 
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px; 
-    padding-top: 200px;
+#hero-section {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 18%;
+  margin-left: 10%;
 }
 
-#Pfp {
+#profile-picture {
   width: 265px;
   height: 265px;
   flex-shrink: 0;
-  border-radius: 265px;
+  border-radius: 100%;
   border: 8px solid #ec4038;
   box-shadow: 0px 0px 90px 0px rgba(236, 64, 56, 0.36);
   background: url("profile_picture.jpg"), lightgray 50% / cover no-repeat;
   background-size: contain;
+}
+
+#hero-section-text {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-shrink: 0;
+  padding-left: 10%;
+  word-wrap: break-word;
+}
+
+#first-line {
+  color: white;
+  font-size: 28px;
+  font-weight: medium;
+  line-height: 42px;
+}
+
+#second-line {
+  color: white;
+  font-size: 38px;
+  font-weight: bold;
+  line-height: 57px;
+}
+
+#third-line {
+  color: white;
+  font-size: 38px;
+  font-weight: medium;
+  line-height: 57px;
+}
+
+#fourth-line {
+  color: #ec4038;
+  font-size: 38px;
+  font-weight: medium;
+  line-height: 57px;
+}
+
+#cta-buttons {
+  display: flex;
+  padding-top: 4%;
+}
+
+#outline-button {
+  background-color: transparent;
+  color: white;
+  font-size: 20px;
+  font-family: "Spartan";
+  font-weight: bold;
+  word-wrap: break-word;
+
+  width: 230px;
+  padding: 4%;
+  margin-right: 10%;
+
+  letter-spacing: 1px; 
+  text-align: center;
+  text-shadow: 0px 1px 2px #662523;
+  border-radius: 34px;
+  border: 2px solid #ec4038;
+  box-shadow: 0px 4px 85px 0px rgba(0, 0, 0, 0.5);
+}
+
+#filled-button {
+  background-color: #ec4038;
+  color: white;
+  font-size: 20px;
+  font-family: "Spartan";
+  font-weight: bold;
+  word-wrap: break-word;
+
+  width: 230px;
+  padding: 4%;
+
+  letter-spacing: 1px; 
+  text-align: center;
+  text-shadow: 0px 1px 2px #662523;
+  border-radius: 34px;
+  border: 0px solid #ec4038;
+  box-shadow: 0px 4px 85px 0px rgba(0, 0, 0, 0.5);
 }
