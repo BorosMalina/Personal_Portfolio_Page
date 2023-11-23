@@ -3,9 +3,6 @@ body {
   width: auto;
   height: auto;
   font-family: "Spartan";
-  padding-left: 20%;
-  padding-right: 20%;
-  padding-top: 2%;
 }
 
 #nav-bar {
@@ -15,22 +12,28 @@ body {
   width: auto;
   height: auto;
   gap: 10%;
-  flex-shrink: 0;
+  padding-top: 2vh;
 }
 
 .nav-bar-item {
   width: 100px;
-  border-bottom: 2px solid #ec4038;
+  border-bottom: 2px solid transparent;
   font-size: 16px;
   color: white;
   padding-bottom: 4px;
   text-align: center;
+  transition: 0.3s;
 }
 
-.container {
+.nav-bar-item:hover {
+  border-bottom: 2px solid #ec4038;
+  transition: 0.3s;
+}
+
+.logo {
   width: 60px;
   height: 60px;
-  margin-right: auto;
+  place-content: center;
   border-radius: 100%;
   flex-shrink: 0;
   background: linear-gradient(180deg, #662523 0%, #ec4038 100%);
@@ -44,20 +47,21 @@ body {
   text-shadow: 0px 2px 6px #662523;
   font-weight: 500;
   text-align: center;
-  padding-left: 25%;
+  padding-left: 24%;
 }
 
 #hero-section {
-  display: inline-flex;
-  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  padding-top: 18%;
-  margin-left: 10%;
+  padding-top: 20vh;
+  margin: auto;
+  max-width: 800px;
 }
 
 #profile-picture {
-  width: 265px;
-  height: 265px;
+  width: 255px;
+  height: 255px;
   flex-shrink: 0;
   border-radius: 100%;
   border: 8px solid #ec4038;
@@ -67,12 +71,10 @@ body {
 }
 
 #hero-section-text {
-  display: inline-flex;
+  /* display: inline-flex; */
   flex-direction: column;
   justify-content: space-evenly;
-  flex-shrink: 0;
-  padding-left: 10%;
-  word-wrap: break-word;
+  padding-left: 50px;
 }
 
 #first-line {
@@ -105,6 +107,7 @@ body {
 
 #cta-buttons {
   display: flex;
+  flex-direction: row;
   padding-top: 4%;
 }
 
@@ -120,7 +123,7 @@ body {
   padding: 4%;
   margin-right: 10%;
 
-  letter-spacing: 1px; 
+  letter-spacing: 1px;
   text-align: center;
   text-shadow: 0px 1px 2px #662523;
   border-radius: 34px;
@@ -140,7 +143,7 @@ body {
   width: 230px;
   padding: 4%;
 
-  letter-spacing: 1px; 
+  letter-spacing: 1px;
   text-align: center;
   text-shadow: 0px 1px 2px #662523;
   border-radius: 34px;
@@ -155,9 +158,49 @@ body {
   transition: 0.5s;
 }
 
-#filled-button:hover{
+#filled-button:hover {
   background-color: transparent;
   border: 2px solid #ec4038;
   box-shadow: 0px 4px 85px 0px rgba(117, 12, 12, 0.5);
   transition: 0.5s;
+}
+
+.about-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 160vh;
+  flex-direction: column;
+}
+
+#about-title {
+  width: auto;
+  text-align: center;
+  color: white;
+  font-weight: medium;
+  border-bottom: 2px solid #ec4038;
+  line-height: 28px;
+}
+
+#section-title {
+  width: auto;
+  align-self: flex-start;
+  padding-left: 20vw;
+  padding-top: 8vh;
+  color: white;
+  font-weight: bold;
+  font-size: 20;
+  line-height: 28px;
+}
+
+#section-text {
+  width: 820px;
+  align-self: flex-start;
+  padding-left: 20vw;
+  padding-top: 4vh;
+  color: white;
+  font-weight: medium;
+  font-size: 20;
+  line-height: 28px;
 }
