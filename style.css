@@ -126,6 +126,7 @@ body {
   border-radius: 34px;
   border: 2px solid #ec4038;
   box-shadow: 0px 4px 85px 0px rgba(0, 0, 0, 0.5);
+  transition: 0.5s;
 }
 
 #filled-button {
@@ -143,6 +144,20 @@ body {
   text-align: center;
   text-shadow: 0px 1px 2px #662523;
   border-radius: 34px;
-  border: 0px solid #ec4038;
+  border: 2px solid #ec4038;
   box-shadow: 0px 4px 85px 0px rgba(0, 0, 0, 0.5);
+  transition: 0.5s;
+}
+
+#outline-button:hover {
+  background-color: #ec4038;
+  box-shadow: 0px 4px 85px 0px rgba(117, 12, 12, 0.5);
+  transition: 0.5s;
+}
+
+#filled-button:hover{
+  background-color: transparent;
+  border: 2px solid #ec4038;
+  box-shadow: 0px 4px 85px 0px rgba(117, 12, 12, 0.5);
+  transition: 0.5s;
 }
