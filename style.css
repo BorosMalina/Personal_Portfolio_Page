@@ -72,7 +72,8 @@ body {
   border-radius: 100%;
   border: 8px solid #ec4038;
   box-shadow: 0px 0px 90px 0px rgba(236, 64, 56, 0.36);
-  background: url("profile_picture.jpg"), lightgray 50% / cover no-repeat;
+  background: url("public/images/profile_picture.jpg"),
+    lightgray 50% / cover no-repeat;
   background-size: contain;
 }
 
@@ -187,7 +188,7 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: url("aboutme_bg.png") left/cover no-repeat;
+  background: url("public/images/aboutme_bg.png") left/cover no-repeat;
   mix-blend-mode: soft-light;
   background-size: auto;
   background-position: left;
@@ -196,15 +197,15 @@ body {
 
 #about-title {
   position: relative;
-  width: 200px;
+  width: 180px;
   padding-top: 6vh;
   text-align: center;
-  padding-top: 8vh;
+  padding-top: 6vh;
   color: white;
   font-weight: medium;
   border-bottom: 2px solid #ec4038;
-  line-height: 38px;
-  font-size: 28px;
+  line-height: 150%;
+  font-size: 24px;
 }
 
 .section-title {
@@ -221,26 +222,62 @@ body {
 
 #section-text {
   position: relative;
-  width: 40vw;
+  width: 46vw;
   align-self: flex-start;
   padding-left: 36vw;
-  padding-top: 6vh;
+  padding-top: 4vh;
   color: white;
   font-weight: medium;
   font-size: 20;
   line-height: 150%;
 }
 
-#resume-button {
-  display: flex;
-  width: 250px;
-  padding: 18px 32px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
+.logos-frame {
+  display: inline-flex;
+  position: relative;
+  width: 30vw;
+  align-self: flex-start;
+  padding-top: 2vh;
+  padding-left: 36vw;
+  gap: 1vw;
+}
 
+.logo-images {
+  box-shadow: 0px 0px 45px 0px rgba(251, 251, 251, 0.11);
+}
+
+#resume-button-frame {
+  display: inline-flex;
+  position: relative;
+  align-items: center;
+  align-self: flex-start;
+  padding-left: 36vw;
+  padding-top: 6vh;
+  vertical-align: middle;
+}
+
+#resume-button {
   background-color: transparent;
   color: white;
+  font-size: 18px;
+  font-family: "Spartan";
+  font-weight: 600;
+  text-align: center;
+  text-shadow: 0px 1px 2px #662523;
+  width: 220px;
+  padding: 20px;
   border-radius: 34px;
-  border: 2px solid var(--Accent, #ec4038);
+  border: 2px solid #ec4038;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.5);
+  transition: 0.5s;
+}
+
+#resume-button:hover {
+  box-shadow: 0px 4px 20px 0px #ec413856;
+  transition: 0.5s;
+}
+
+#resume-button:active {
+  border: 2px solid #ffffff;
+  transition: 0.2s;
 }
